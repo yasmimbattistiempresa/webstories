@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://SEU-PROJETO.pages.dev/sitemap.xml
+Sitemap: https://webstories-cqv.pages.dev/sitemap.xml
