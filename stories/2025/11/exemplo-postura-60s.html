@@ -62,13 +62,20 @@
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <!-- página de fim: avança sozinha e dispara o bookend -->
-  <amp-story-page id="fim" auto-advance-after="0.1s">
-    <amp-story-grid-layer template="fill"><div style="background:#000;width:100%;height:100%"></div></amp-story-grid-layer>
-  </amp-story-page>
-
   <!-- bookend -->
   <amp-story-bookend src="/assets/bookends/exemplo-postura-60s.json" layout="nodisplay"></amp-story-bookend>
+
+  <!-- página final com CTA -->
+  <amp-story-page id="fim-cta">
+    <amp-story-cta-layer>
+      <a href="/go/postura"
+         style="background:#fff;color:#000;padding:14px 18px;border-radius:10px;
+                text-decoration:none;font-weight:700;display:inline-block">
+        👉 Ver oferta agora
+      </a>
+    </amp-story-cta-layer>
+  </amp-story-page>
+
 </amp-story>
 
 </body>
