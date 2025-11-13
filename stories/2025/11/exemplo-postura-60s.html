@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="description" content="Três ajustes rápidos para aliviar tensão na cervical em 60 segundos.">
 
+  <!-- AMP runtime + componente de story -->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
 
+  <!-- AMP boilerplate CORRETO -->
   <style amp-boilerplate>
   body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
   -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
@@ -21,7 +23,31 @@
   @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
   @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
   </style>
-  <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <noscript>
+    <style amp-boilerplate>
+      body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+    </style>
+  </noscript>
+
+  <!-- CSS simples pra layout + botão -->
+  <style amp-custom>
+    body{font-family:system-ui;}
+    h1,h2,p{margin:0;}
+    .page{padding:40px;}
+    .cta{
+      text-align:center;
+      margin-top:32px;
+    }
+    .botao-cta{
+      display:inline-block;
+      padding:12px 24px;
+      border-radius:999px;
+      background:#ffffff;
+      color:#000000;
+      text-decoration:none;
+      font-weight:600;
+    }
+  </style>
 </head>
 <body>
 
@@ -31,49 +57,43 @@
   publisher-logo-src="/assets/postura-pt/logo.png"
   poster-portrait-src="/assets/postura-pt/logo.png">
 
-  <!-- capa -->
+  <!-- Página 1: capa -->
   <amp-story-page id="capa">
-    <amp-story-grid-layer template="fill"><div style="background:#111;width:100%;height:100%"></div></amp-story-grid-layer>
-    <amp-story-grid-layer template="vertical" style="padding:40px;color:#fff">
+    <amp-story-grid-layer template="vertical" class="page">
       <h1>3 ajustes para sua cervical</h1>
       <p>Alivie tensão em 60s</p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <!-- páginas -->
+  <!-- Página 2 -->
   <amp-story-page id="dica1">
-    <amp-story-grid-layer template="vertical" style="padding:40px">
+    <amp-story-grid-layer template="vertical" class="page">
       <h2>1) Alongue o pescoço</h2>
       <p>30s para cada lado — respiração tranquila.</p>
     </amp-story-grid-layer>
   </amp-story-page>
 
+  <!-- Página 3 -->
   <amp-story-page id="dica2">
-    <amp-story-grid-layer template="vertical" style="padding:40px">
+    <amp-story-grid-layer template="vertical" class="page">
       <h2>2) Ombros para trás</h2>
       <p>10 repetições lentas para abrir o peito.</p>
     </amp-story-grid-layer>
   </amp-story-page>
 
+  <!-- Página 4 + BOTÃO -->
   <amp-story-page id="dica3">
-    <amp-story-grid-layer template="vertical" style="padding:40px">
+    <amp-story-grid-layer template="vertical" class="page">
       <h2>3) Queixo recolhido</h2>
       <p>5 repetições, mantendo 3 segundos.</p>
+
+      <div class="cta">
+        <!-- AQUI vai o link do produto (por enquanto é só exemplo) -->
+        <a class="botao-cta" href="https://exemplo.com/produto">
+          Saiba mais
+        </a>
+      </div>
     </amp-story-grid-layer>
-  </amp-story-page>
-
-  <!-- bookend -->
-  <amp-story-bookend src="/assets/bookends/exemplo-postura-60s.json" layout="nodisplay"></amp-story-bookend>
-
-  <!-- página final com CTA -->
-  <amp-story-page id="fim-cta">
-    <amp-story-cta-layer>
-      <a href="/go/postura"
-         style="background:#fff;color:#000;padding:14px 18px;border-radius:10px;
-                text-decoration:none;font-weight:700;display:inline-block">
-        👉 Ver oferta agora
-      </a>
-    </amp-story-cta-layer>
   </amp-story-page>
 
 </amp-story>
