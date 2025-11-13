@@ -1,31 +1,54 @@
 <!doctype html>
-<html ⚡ lang="pt-BR">
+<html amp lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <title>3 ajustes para sua cervical (60s)</title>
   <link rel="canonical" href="https://webstories-cqv.pages.dev/stories/2025/11/exemplo-postura-60s.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="description" content="Três ajustes rápidos para aliviar tensão na cervical em 60 segundos.">
+
+  <!-- AMP runtime + componente de story -->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
-  <style amp-boilerplate>body{visibility:hidden}</style>
-  <noscript><style amp-boilerplate>body{visibility:visible}</style></noscript>
+
+  <!-- AMP boilerplate CORRETO -->
+  <style amp-boilerplate>
+  body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+  -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+  -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+  animation:-amp-start 8s steps(1,end) 0s 1 normal both}
+  @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+  @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+  @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+  @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+  @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+    </style>
+  </noscript>
 </head>
 <body>
+
 <amp-story standalone
   title="3 ajustes para sua cervical (60s)"
   publisher="Postura Brasil"
   publisher-logo-src="/assets/postura-pt/logo.png"
   poster-portrait-src="/assets/postura-pt/logo.png">
 
+  <!-- Página 1: capa -->
   <amp-story-page id="capa">
-    <amp-story-grid-layer template="fill" style="background:#111"></amp-story-grid-layer>
+    <amp-story-grid-layer template="fill">
+      <div style="background:#111;width:100%;height:100%"></div>
+    </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" style="padding:40px;color:#fff">
       <h1>3 ajustes para sua cervical</h1>
       <p>Alivie tensão em 60s</p>
     </amp-story-grid-layer>
   </amp-story-page>
 
+  <!-- Página 2 -->
   <amp-story-page id="dica1">
     <amp-story-grid-layer template="vertical" style="padding:40px">
       <h2>1) Alongue o pescoço</h2>
@@ -33,6 +56,7 @@
     </amp-story-grid-layer>
   </amp-story-page>
 
+  <!-- Página 3 -->
   <amp-story-page id="dica2">
     <amp-story-grid-layer template="vertical" style="padding:40px">
       <h2>2) Ombros para trás</h2>
@@ -40,6 +64,7 @@
     </amp-story-grid-layer>
   </amp-story-page>
 
+  <!-- Página 4 -->
   <amp-story-page id="dica3">
     <amp-story-grid-layer template="vertical" style="padding:40px">
       <h2>3) Queixo recolhido</h2>
@@ -47,7 +72,9 @@
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <amp-story-bookend src="data:application/json,{&quot;bookendVersion&quot;:&quot;v1.0&quot;}" layout="nodisplay"></amp-story-bookend>
+  <!-- (Removido o bookend por enquanto para validar sem erro) -->
+
 </amp-story>
+
 </body>
 </html>
