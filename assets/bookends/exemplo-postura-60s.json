@@ -1,0 +1,16 @@
+{
+  "bookendVersion": "v1.0",
+  "shareProviders": ["whatsapp", "facebook", "copy"],
+  "components": [
+    { "type": "heading", "text": "Veja também" },
+    {
+      "type": "cta-link",
+      "links": [
+        {
+          "text": "Mais dicas de postura",
+          "url": "https://webstories-cqv.pages.dev/"
+        }
+      ]
+    }
+  ]
+}
